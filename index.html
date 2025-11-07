@@ -7,37 +7,59 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
+    <link rel="stylesheet" href="./style.css" />
     <title>The modern bakery</title>
   </head>
   <body>
     <header>
       <nav>
-        <a href="">
+        <a href="/">
+          <!--browser automatically finds file index.html first, therefore just write / in <a>-->
           <img
             src="./images/logo.svg"
             alt="logo of Shop Bakery"
           />
         </a>
         <ul>
-          <li><a href="">Franchise</a></li>
-          <li><a href="">Our traditions</a></li>
-          <li><a href="">Formats</a></li>
-          <li><a href="">Contact</a></li>
+          <li>
+            <a class="link" href="#traditions-section"
+              >Our traditions</a
+            >
+          </li>
+          <li>
+            <a class="link" href="#chefs-section">Chefs</a>
+          </li>
+          <li>
+            <a class="link" href="#format-section"
+              >Formats</a
+            >
+          </li>
+          <li>
+            <a class="link" href="#contact-section"
+              >Contact</a
+            >
+          </li>
         </ul>
       </nav>
-      <button type="button">Request a call</button>
+      <button class="button" type="button">
+        Request a call
+      </button>
     </header>
     <main>
       <section>
-        <h1>Family Bakery</h1>
+        <h1 class="hero-title">
+          <span class="accent">The modern</span> Bakery
+        </h1>
       </section>
-      <section>
-        <ul>
+      <section id="traditions-section">
+        <ul class="andavtages-list">
           <li>High market demand</li>
           <li>Budget-friendly formats</li>
           <li>Experienced management team</li>
         </ul>
-        <h2>New Format of Traditions</h2>
+        <h2 class="section-title">
+          New Format of Traditions
+        </h2>
         <p>
           <span>Shop Bakery</span> is a bakery that has
           taken thre best of everything and preserved the
@@ -54,8 +76,10 @@
         </p>
         <img src="./images/vlad.jpg" alt="baker-man" />
       </section>
-      <section>
-        <h2>Our best chefs</h2>
+      <section id="chefs-section">
+        <h2 class="section-title">
+          Our best <span class="accent">chefs</span>
+        </h2>
         <ul>
           <li>
             <article>
@@ -91,8 +115,8 @@
           </li>
         </ul>
       </section>
-      <section>
-        <h2>Format</h2>
+      <section id="format-section">
+        <h2 class="section-title">Format</h2>
         <ul>
           <li>
             <article>
@@ -111,22 +135,30 @@
           </li>
         </ul>
       </section>
-      <section>
-        <h2>Join Us</h2>
+      <section id="contact-section">
+        <h2 class="section-title">Join Us</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d162598.955555212!2d30.3790454!3d50.4483892!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2z0YPQuy4g0KHQtdGH0LXQstGL0YUg0KHRgtGA0LXQu9GM0YbQvtCyLCA1NCwg0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2sno!4v1761901012436!5m2!1sru!2sno"
+          width="603"
+          height="593"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </section>
     </main>
   </body>
   <footer>
     <nav>
-      <a href="">
+      <a href="/">
         <img
           src="./images/logo.svg"
           alt="logo of Shop Bakery"
         />
       </a>
       <ul>
-        <li><a href="">Franchise</a></li>
         <li><a href="">Our traditions</a></li>
+        <li><a href="">Chefs</a></li>
         <li><a href="">Formats</a></li>
         <li><a href="">Contact</a></li>
       </ul>
@@ -147,6 +179,7 @@
           <a
             href="https://maps.app.goo.gl/GrTgeR8rkHE7ViDP7"
             target="_blank"
+            lang="uk"
             >Україна, м. Київ, вул. Січових Стрільців 54</a
           >
         </li>
@@ -162,7 +195,7 @@
         </li>
       </ul>
       <a href="#" target="_blank">Privacy policy </a>
-      <p>© 2024 Data protected</p>
+      <p>&copy; 2024 Data protected</p>
     </address>
   </footer>
 </html>
